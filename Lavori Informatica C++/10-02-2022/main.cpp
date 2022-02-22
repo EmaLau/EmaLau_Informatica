@@ -11,6 +11,6 @@ int main(int argc, char** argv) {
 	int l=0;
 	cout<<"Inserire lunghezza pendolo espresso in metri"<<endl;
 	cin>>l;
-	cout<<"Velocita' in secondi dell'oscillazione del pendolo"<<secondi(l)<<endl;
+	cout<<"Velocita' in secondi dell'oscillazione del pendolo "<<secondi(l)<<endl;
 	return 0;
 }
