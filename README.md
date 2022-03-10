@@ -1,1 +1,4 @@
-Ciao, sono EmaLau e qui ci sono i miei file che posso tranquillamente pubblicare
+Qui ci sono i miei file di scuola, per la programmazione
+siete liberi di usarli anche voi!
+Adios
+EmaLau
