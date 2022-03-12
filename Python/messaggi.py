@@ -1,4 +1,4 @@
-from signal import pause
+from tracemalloc import stop
 
 
 print("Inserisci la parola da riptere")
@@ -7,4 +7,4 @@ print("Inserisci il numero per quante volte deve ripetere: "+a)
 b=int(input())
 for i in range(b):
     print(a+" "+str(i+1))
-pause
+stop
