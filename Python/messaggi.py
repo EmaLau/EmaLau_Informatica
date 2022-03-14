@@ -1,4 +1,4 @@
-print("Inserisci la parola da riptere")
+print("Inserisci la parola/frase da riptere")
 a=input()
 print("Inserisci il numero per quante volte deve ripetere: "+a)
 b=int(input())
