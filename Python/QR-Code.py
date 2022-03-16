@@ -1,6 +1,6 @@
 import qrcode
 
 img = qrcode.make(
-    'https://www.youtube.com/watch?v=QzPKFfTZFj0'
+    'http://lestanzedielle.it/'
 )
 img.save('MyQRCode.png')
