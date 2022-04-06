@@ -40,6 +40,7 @@ int main(int argc, char** argv) {
 			}
 		}
 	}
+	cout<<"/---------------------------------------------------------------/"<<endl;
 	for(i=0; i<n; i++){
 		cout<<"Libro "<<i+1<<endl;
 		cout<<"Titolo "<<libri[i].titolo<<endl;
@@ -50,5 +51,6 @@ int main(int argc, char** argv) {
 		totale=libri[i].costo+totale;
 	}
 	cout<<"Costo totale dei libri "<<totale<<endl;
+	system("PAUSE");
 	return 0;
 }
