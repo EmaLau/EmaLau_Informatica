@@ -30,11 +30,14 @@ int main(int argc, char** argv) {
 		cin>>libri[i].costo;
 		
 	}
-	for(i=0; i<n; i++){
-		if(libri[i].titolo[0]>libri[i+1].titolo[0]){
-			app= libri[i].titolo[0];
-			libri[i].titolo[0] = libri[i+1].titolo[0];
-			libri[i+1].titolo[0]=app;
+	libro app;
+	for(i=0; i<n-1; i++){
+		for(int j=i+1; j<n; j++){
+			if(libri[i].titolo[0]>libri[j].titolo[0]){
+				app = libri[i];
+				libri[i]= libri[j];
+				libri[j] = app;
+			}
 		}
 	}
 	for(i=0; i<n; i++){
