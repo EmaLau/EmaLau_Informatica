@@ -1,4 +1,12 @@
 #include <iostream>
+#include <stdlib.h>
+#include <time.h>
+#include <cstdlib>
+#include <string>
+#include <math.h>
+
+
+
 using namespace std;
 class CRC
 {
@@ -25,18 +33,37 @@ public:
 	{
 		cout << "Enter length of your frame:";
 		cin >> nf;
-		cout << "Enter your frame:";
+		int valore_bits = 0;
+		srand(time(NULL));
+		for (int i = 0; i < nf; i++) {
+			valore_bits = rand() % 2;
+			frame[i] = valore_bits;
+			temp[i] = frame[i];
+		}
+		
+		
+		
+		
+		/*cout << "Enter your frame:";
 		for (int i = 0; i < nf; i++)
 		{
 			cin >> frame[i];
 			temp[i] = frame[i];
-		}
+		}*/
 		cout << "Enter length of your generator:"; cin >> ng;
-		cout << "Enter your generator:";
+		
+		
+		int valore_bit = 0;
+		srand(time(NULL));
+		for (int i = 0; i < ng; i++) {
+			valore_bit = rand() % 2;
+			gen[i] = valore_bit;
+		}
+		/*cout << "Enter your generator:";
 		for (int i = 0; i < ng; i++)
 		{
 			cin >> gen[i];
-		}
+		}*/
 		ng--;
 		for (int i = 0; i < ng; i++)
 		{
@@ -57,8 +84,12 @@ public:
 		for (int i = 0; i < nf + ng; i++)
 			cout << frame[i] << ' ';
 		cout << endl;
+		int* receiver;
+		cout << "\n-----Receivers Side-----\n" << "Received message:";
+		for (int i = 0; i < nf + ng; i++)
+			cout << frame[i] << ' ';
 	}
-	int receiver_side()
+	/*int receiver_side()
 	{
 		int* receiver;
 		cout << "\n-----Receivers Side-----\n" << "Received message:";
@@ -82,13 +113,13 @@ public:
 			}
 		}
 		cout << "No error detected!" << endl;
-	}
+	}*/
 };
 int main()
 {
 	CRC o;
 	o.input();
 	o.sender_side();
-	o.receiver_side();
+	//o.receiver_side();
 	return 0;
 }
