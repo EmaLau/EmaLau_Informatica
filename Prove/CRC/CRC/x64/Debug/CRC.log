@@ -1,0 +1,4 @@
+﻿  CRC.cpp
+C:\Users\emala\Desktop\Prove\CRC\CRC\CRC.cpp(15,1): warning C4554: '^': controllare eventuali errori di precedenza tra gli operatori. Per maggiore chiarezza, usare le parentesi
+C:\Users\emala\Desktop\Prove\CRC\CRC\CRC.cpp(85): warning C4715: 'CRC::receiver_side': non tutti i percorsi di controllo restituiscono un valore
+  CRC.vcxproj -> C:\Users\emala\Desktop\Prove\CRC\x64\Debug\CRC.exe
