@@ -66,7 +66,6 @@ int main()
     }
     //Amir e Emanuele
     string Mx("");
-    
     //Emanuele
 
     Mx = genera_sequenza_bits_da_trasmettere(nr_bits_da_trasmettere);
