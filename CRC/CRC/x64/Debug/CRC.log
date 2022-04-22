@@ -1,0 +1,4 @@
+﻿  CRC.cpp
+C:\Users\emala\Desktop\EmaLau\CRC\CRC\CRC.cpp(43,15): warning C4244: 'argomento': conversione da 'time_t' a 'unsigned int'. Possibile perdita di dati.
+C:\Users\emala\Desktop\EmaLau\CRC\CRC\CRC.cpp(58,36): warning C4101: 'somma': variabile locale senza riferimenti
+  CRC.vcxproj -> C:\Users\emala\Desktop\EmaLau\CRC\x64\Debug\CRC.exe
