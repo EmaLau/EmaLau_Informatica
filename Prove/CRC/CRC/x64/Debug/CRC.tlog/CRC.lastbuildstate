@@ -1,2 +1,6 @@
 PlatformToolSet=v143:VCToolArchitecture=Native64Bit:VCToolsVersion=14.31.31103:TargetPlatformVersion=10.0.22000.0:
+<<<<<<< HEAD
 Debug|x64|C:\Users\EmaLau\Desktop\EmaLau\Prove\CRC\|
+=======
+Debug|x64|C:\Users\emala\Desktop\EmaLau\Prove\CRC\|
+>>>>>>> 145e12a1c38cf8c322b4111364f9b15d35f7359e

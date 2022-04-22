@@ -2,7 +2,11 @@
 <Project>
   <ProjectOutputs>
     <ProjectOutput>
+<<<<<<< HEAD
       <FullPath>C:\Users\EmaLau\Desktop\EmaLau\Prove\CRC\x64\Debug\CRC.exe</FullPath>
+=======
+      <FullPath>C:\Users\emala\Desktop\EmaLau\Prove\CRC\x64\Debug\CRC.exe</FullPath>
+>>>>>>> 145e12a1c38cf8c322b4111364f9b15d35f7359e
     </ProjectOutput>
   </ProjectOutputs>
   <ContentFiles />
