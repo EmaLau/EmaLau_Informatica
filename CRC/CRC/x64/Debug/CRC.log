@@ -1,4 +1,0 @@
-﻿  CRC.cpp
-C:\Users\emala\Desktop\EmaLau\CRC\CRC\CRC.cpp(43,15): warning C4244: 'argomento': conversione da 'time_t' a 'unsigned int'. Possibile perdita di dati.
-C:\Users\emala\Desktop\EmaLau\CRC\CRC\CRC.cpp(69,16): error C2660: 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>::size': la funzione non accetta 1 argomenti
-C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.31.31103\include\xstring(3937,39): message : vedere la dichiarazione di 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>::size'
