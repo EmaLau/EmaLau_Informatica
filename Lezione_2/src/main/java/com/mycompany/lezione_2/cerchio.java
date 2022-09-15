@@ -6,7 +6,6 @@ public class cerchio {
     
     private double raggio;
     private double diametro;
-    private double perimetro;
     //Metodi
     
     public void set_raggio(double r){

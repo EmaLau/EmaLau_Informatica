@@ -2,13 +2,11 @@
 package com.mycompany.lezione_2;
 
 import java.util.Scanner;
-import javax.swing.JFrame;
 
 public class Lezione_2 {
 
     public static void main(String[] args) {
         Scanner cin = new Scanner(System.in);
-        
         cerchio cer = new cerchio();
         
         System.out.println("Inserisci il raggio del cerchio");
