@@ -10,8 +10,6 @@ public class Televisore_Class {
     private int volume;
     private int luminosita;
     private boolean acceso;
-
-    //Costructor
     //Metods
     public void set_acceso(String acceso) {
         if ("acceso".equals(acceso)) {
