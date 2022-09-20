@@ -14,9 +14,7 @@ public class Televisore_Class {
     //Metods
     public void set_acceso(String acceso) {
         if ("acceso".equals(acceso)) {
-            this.acceso=true;
         } else {
-            System.out.println("Il tuo televisore è stato acceso");
             this.acceso = true;
         }
     }
@@ -44,8 +42,6 @@ public class Televisore_Class {
     public void set_canale(int canale) {
         if (canale < 99 && canale > 0) {
             this.canale = canale;
-        } else {
-            System.out.println("canale non disponibile, sei stato impostato al canale " + this.canale);
         }
     }
 
@@ -57,8 +53,6 @@ public class Televisore_Class {
         this.volume = 50;
         if (volume < 100 && volume > 0) {
             this.volume = volume;
-        } else {
-            System.out.println("Non puoi impostare il volume maggiore di 100 e meno di 0, sei stato impostato a " + this.volume);
         }
     }
 
@@ -70,8 +64,6 @@ public class Televisore_Class {
         this.luminosita = 500;
         if (luminosita < 1000 && luminosita > 100) {
             this.luminosita = luminosita;
-        } else {
-            System.out.println("Non puoi impostare più di 1000 nits e meno di 100 nits sei stato impostato a  " + this.luminosita);
         }
     }
 
@@ -87,7 +79,4 @@ public class Televisore_Class {
         return colore;
     }
 
-    public String TelevisoreUscita() {
-        return "Il tuo Televisore è acceso ed è di colore: " + colore + ", lo schermo dei tuo televisore è " + schermo + ", ed è grande " + pollici + " pollici, hai impostato il canale " + canale + ", il livello del volume è di " + volume + " e la luminosità è impostata su " + luminosita + "nits";
-    }
 }
