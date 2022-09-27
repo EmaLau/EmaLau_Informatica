@@ -4,14 +4,25 @@ public class Televisore_Class {
 
     //Attributes
     private int pollici;
-    private String schermo;
+    private String Schermo;
     private String colore;
     private int canale;
     private int volume;
     private int luminosita;
     private boolean acceso;
     
+    public Televisore_Class(int pollici1, String schermo1, String colore1, int canale1, int volume1, int luminosita1, boolean on) {
+    this.pollici = pollici1;
+    this.Schermo = schermo1;
+    this.colore = colore1;
+    this.canale = canale1;
+    this.volume = volume1;
+    this.luminosita = luminosita1;
+    this.acceso = on;
+    }
+    
     //Metods
+    
     public void set_acceso(String acceso) {
         if ("acceso".equals(acceso)) {
         } else {
@@ -31,12 +42,12 @@ public class Televisore_Class {
         return pollici;
     }
 
-    public void set_schermo(String schermo) {
-        this.schermo = schermo;
+    public void set_schermo(String schermo1) {
+        this.Schermo = schermo1;
     }
 
     public String get_schermo() {
-        return schermo;
+        return Schermo;
     }
 
     public void set_canale(int canale) {
