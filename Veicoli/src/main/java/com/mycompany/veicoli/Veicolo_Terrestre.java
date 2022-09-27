@@ -1,13 +1,11 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package com.mycompany.veicoli;
 
-/**
- *
- * @author emalau
- */
+
 public class Veicolo_Terrestre {
-    
+    //Attributes
+    //private int n_airbag;
+    //private int n_porte; da mettere su auto
+    private String tipo_carburante;
+    private boolean esp;
+    private int dimensione_pneumatici;
 }

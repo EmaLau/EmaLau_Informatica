@@ -1,15 +1,18 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package com.mycompany.veicoli;
 
-/**
- *
- * @author emalau
- */
+
 public class Veicolo {
-    
-    public int a;
+    //Attributes
+    private String targa;
+    private String n_telaio;
+    private boolean acceso;
+    private int livello_carburante;
+    private int riserva;
+    private int velocita;
+    private int marcia;
+    private int cilindrata;
+    private String marca;
+    private String modello;
+    //Metods
     
 }
