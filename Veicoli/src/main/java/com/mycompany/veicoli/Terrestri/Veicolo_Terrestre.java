@@ -1,4 +1,4 @@
-package com.mycompany.veicoli;
+package com.mycompany.veicoli.Terrestri;
 
 public class Veicolo_Terrestre {
 
@@ -9,5 +9,4 @@ public class Veicolo_Terrestre {
     private boolean esp;
     private int dimensione_pneumatici;
     private String n_telaio;
-
 }
