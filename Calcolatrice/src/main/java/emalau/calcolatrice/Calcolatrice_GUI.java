@@ -322,7 +322,7 @@ public class Calcolatrice_GUI extends javax.swing.JFrame {
         calc.set_operando("+");
         int c = 1;
         c = c + 1;
-        if (c >= 1) {
+        if (c > 1) {
 
         }
         Calc_text.setText("0");
@@ -333,7 +333,7 @@ public class Calcolatrice_GUI extends javax.swing.JFrame {
         calc.set_operando("-");
         int c = 1;
         c = c + 1;
-        if (c >= 1) {
+        if (c > 1) {
 
         }
         Calc_text.setText("0");
@@ -344,7 +344,7 @@ public class Calcolatrice_GUI extends javax.swing.JFrame {
         calc.set_operando(":");
         int c = 1;
         c = c + 1;
-        if (c >= 1) {
+        if (c > 1) {
 
         }
         Calc_text.setText("0");
@@ -355,7 +355,7 @@ public class Calcolatrice_GUI extends javax.swing.JFrame {
         calc.set_operando("*");
         int c = 1;
         c = c + 1;
-        if (c >= 1) {
+        if (c > 1) {
 
         }
         Calc_text.setText("0");
@@ -367,7 +367,7 @@ public class Calcolatrice_GUI extends javax.swing.JFrame {
     }//GEN-LAST:event_TotaleActionPerformed
 
     private void PuntoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PuntoActionPerformed
-
+        set_Display(".");
     }//GEN-LAST:event_PuntoActionPerformed
 
     /**
