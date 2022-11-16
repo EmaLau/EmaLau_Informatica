@@ -41,6 +41,7 @@ public class Calcolatrice_GUI extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
+        Calc_text.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
         Calc_text.setText("0");
         Calc_text.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {

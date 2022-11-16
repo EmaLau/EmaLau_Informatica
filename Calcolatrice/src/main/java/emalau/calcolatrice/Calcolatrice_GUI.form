@@ -121,6 +121,7 @@
   <SubComponents>
     <Component class="javax.swing.JTextField" name="Calc_text">
       <Properties>
+        <Property name="horizontalAlignment" type="int" value="4"/>
         <Property name="text" type="java.lang.String" value="0"/>
       </Properties>
       <Events>
