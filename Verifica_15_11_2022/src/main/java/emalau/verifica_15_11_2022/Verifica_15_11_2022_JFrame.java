@@ -101,16 +101,18 @@ public class Verifica_15_11_2022_JFrame extends javax.swing.JFrame {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(23, 260, Short.MAX_VALUE)
+                .addGap(188, 188, 188)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addGap(72, 72, 72)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addComponent(Totale)
                             .addGroup(layout.createSequentialGroup()
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addComponent(jLabel1)
-                                    .addComponent(jLabel2)
-                                    .addComponent(TotaleText, javax.swing.GroupLayout.PREFERRED_SIZE, 300, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addComponent(TotaleText, javax.swing.GroupLayout.PREFERRED_SIZE, 300, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addComponent(jLabel1, javax.swing.GroupLayout.Alignment.TRAILING)
+                                        .addComponent(jLabel2, javax.swing.GroupLayout.Alignment.TRAILING)))
                                 .addGap(18, 18, 18)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(TotaleOut, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -184,11 +186,11 @@ public class Verifica_15_11_2022_JFrame extends javax.swing.JFrame {
 
     private void TotaleActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TotaleActionPerformed
         // TODO add your handling code here:
-        if (Operando == "*") {
+        if ("*".equals(Operando)) {
             VClass.set_n2(Double.parseDouble(SecondoNumero.getText()));
             TotaleText.setText("Il Risultato della Moltiplicazione è:");
             TotaleOut.setText(Double.toString(VClass.get_totale()));
-        } else if (Operando == "/") {
+        } else if ("/".equals(Operando)) {
             VClass.set_n2(Double.parseDouble(SecondoNumero.getText()));
             if (VClass.get_n2() == 0) {
                 TotaleText.setText("Non è possibile fare diviso 0");

@@ -321,44 +321,24 @@ public class Calcolatrice_GUI extends javax.swing.JFrame {
     private void AddizioneActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AddizioneActionPerformed
         calc.set_n1(Double.parseDouble(Calc_text.getText()));
         calc.set_operando("+");
-        int c = 1;
-        c = c + 1;
-        if (c > 1) {
-
-        }
         Calc_text.setText("0");
     }//GEN-LAST:event_AddizioneActionPerformed
 
     private void SottrazioneActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SottrazioneActionPerformed
         calc.set_n1(Double.parseDouble(Calc_text.getText()));
         calc.set_operando("-");
-        int c = 1;
-        c = c + 1;
-        if (c > 1) {
-
-        }
         Calc_text.setText("0");
     }//GEN-LAST:event_SottrazioneActionPerformed
 
     private void DivisioneActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_DivisioneActionPerformed
         calc.set_n1(Double.parseDouble(Calc_text.getText()));
         calc.set_operando(":");
-        int c = 1;
-        c = c + 1;
-        if (c > 1) {
-
-        }
         Calc_text.setText("0");
     }//GEN-LAST:event_DivisioneActionPerformed
 
     private void MoltiplicazioneActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MoltiplicazioneActionPerformed
         calc.set_n1(Double.parseDouble(Calc_text.getText()));
         calc.set_operando("*");
-        int c = 1;
-        c = c + 1;
-        if (c > 1) {
-
-        }
         Calc_text.setText("0");
     }//GEN-LAST:event_MoltiplicazioneActionPerformed
 
