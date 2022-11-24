@@ -1,5 +1,15 @@
 package emalau.calcolatrice;
 
+
+/*
+*
+*
+* Classe per fare le operazioni della calcolatrice
+* @author EmaLau
+* @Version 1.0
+*
+*
+ */
 public class Calcolatrice_Class {
 
     //Attributes
@@ -22,18 +32,25 @@ public class Calcolatrice_Class {
     }
 
     public double get_tot() {
-        if (null != operando) switch (operando) {
-            case "+" -> tot = n1 + n2;
-            case "-" -> tot = n1 - n2;
-            case "*" -> tot = n1 * n2;
-            case ":" -> tot = n1 / n2;
-            default -> {
+        if (null != operando) {
+            switch (operando) {
+                case "+" ->
+                    tot = n1 + n2;
+                case "-" ->
+                    tot = n1 - n2;
+                case "*" ->
+                    tot = n1 * n2;
+                case ":" ->
+                    tot = n1 / n2;
+                default -> {
+                }
             }
         }
         return tot;
     }
-    public void set_reset(boolean resetting){
-        if(resetting = true){
+
+    public void set_reset(boolean resetting) {
+        if (resetting = true) {
             this.n1 = 0;
             this.n2 = 0;
             this.tot = 0;
