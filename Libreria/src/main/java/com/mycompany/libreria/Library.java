@@ -8,10 +8,10 @@ package com.mycompany.libreria;
  *
  * @author emalau
  */
-public class Libreria {
+public class Library {
 
     public static void main(String[] args) {
-        Libreria_Jframe_1 libreria = new Libreria_Jframe_1();
+        Library_JFrame_1 libreria = new Library_JFrame_1();
         libreria.setVisible(true);
     }
 }

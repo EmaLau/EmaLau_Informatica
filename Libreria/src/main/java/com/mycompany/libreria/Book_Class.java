@@ -4,27 +4,36 @@ package com.mycompany.libreria;
  *
  * @author Emanuele Lauro
  */
-public class Libro_Class {
+public class Book_Class {
 
     //Attributes
     private String titolo;
     private String autore;
+    private String produttore;
     private int numeroPagine;
+    private String imei;
     private static double costoPagina = 0.05;
     final double COSTO_FISSO = 5.5;
-
-    public Libro_Class(String titolo, String autore, int numeroPagine) {
-        this.titolo = titolo;
-        this.autore = autore;
-        this.numeroPagine = numeroPagine;
+    
+    //Costructors
+    
+    
+    public Book_Class(String Titolo, String Autore, int Pagine, String Imei, String produttore){
+        this.titolo=Titolo;
+        this.autore=Autore;
+        this.numeroPagine=Pagine;
+        this.imei=Imei;
+        this.produttore = produttore;
     }
-
-    public Libro_Class(Libro_Class libro) {
-        this.titolo = libro.getTitolo();
-        this.autore = libro.getAutore();
-        this.numeroPagine = libro.getNumeroPagine();
+    
+    public Book_Class(Book_Class Book){
+     this.titolo = getTitolo();
+     this.autore = getAutore();
+     this.imei = getImiei();
+     this.numeroPagine = getNumeroPagine();
     }
-
+    
+    
     //Metods
     public void setTitolo(String titolo) {
         this.titolo = titolo;
@@ -40,6 +49,22 @@ public class Libro_Class {
 
     public String getAutore() {
         return autore;
+    }
+    
+    public void setImiei(String imei){
+        this.imei = imei;
+    }
+    
+    public String getImiei(){
+        return imei;
+    }
+    
+    public void setProduttore(String produttore){
+        this.produttore = produttore;
+    }
+    
+    public String getProduttore(){
+        return produttore;
     }
 
     public void setNumeroPagine(int pagine) {

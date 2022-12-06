@@ -4,6 +4,8 @@ package com.mycompany.libreria;
  *
  * @author Emanuele Lauro
  */
-public class Libreria_Class {
+public class Library_Class {
+    //Attributes
     
+    //Metods
 }
