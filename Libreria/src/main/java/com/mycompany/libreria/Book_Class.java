@@ -50,8 +50,8 @@ public class Book_Class {
         return autore;
     }
 
-    public void setSpn(String imei) {
-        this.spn = imei;
+    public void setSpn(String Spn) {
+        this.spn = Spn;
     }
 
     public String getSpn() {
