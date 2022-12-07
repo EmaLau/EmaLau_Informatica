@@ -11,29 +11,28 @@ public class Book_Class {
     private String autore;
     private String produttore;
     private int numeroPagine;
-    private String imei;
+    private String spn;
+
+    /*
     private static double costoPagina = 0.05;
     final double COSTO_FISSO = 5.5;
-    
+     */
     //Costructors
-    
-    
-    public Book_Class(String Titolo, String Autore, int Pagine, String Imei, String produttore){
-        this.titolo=Titolo;
-        this.autore=Autore;
-        this.numeroPagine=Pagine;
-        this.imei=Imei;
+    public Book_Class(String Titolo, String Autore, int Pagine, String Spn, String produttore) {
+        this.titolo = Titolo;
+        this.autore = Autore;
+        this.numeroPagine = Pagine;
+        this.spn = Spn;
         this.produttore = produttore;
     }
-    
-    public Book_Class(Book_Class Book){
-     this.titolo = getTitolo();
-     this.autore = getAutore();
-     this.imei = getImiei();
-     this.numeroPagine = getNumeroPagine();
+
+    public Book_Class(Book_Class Book) {
+        this.titolo = getTitolo();
+        this.autore = getAutore();
+        this.spn = getSpn();
+        this.numeroPagine = getNumeroPagine();
     }
-    
-    
+
     //Metods
     public void setTitolo(String titolo) {
         this.titolo = titolo;
@@ -50,20 +49,20 @@ public class Book_Class {
     public String getAutore() {
         return autore;
     }
-    
-    public void setImiei(String imei){
-        this.imei = imei;
+
+    public void setSpn(String imei) {
+        this.spn = imei;
     }
-    
-    public String getImiei(){
-        return imei;
+
+    public String getSpn() {
+        return spn;
     }
-    
-    public void setProduttore(String produttore){
+
+    public void setProduttore(String produttore) {
         this.produttore = produttore;
     }
-    
-    public String getProduttore(){
+
+    public String getProduttore() {
         return produttore;
     }
 
@@ -75,6 +74,7 @@ public class Book_Class {
         return numeroPagine;
     }
 
+    /*
     public double prezzo() {
         return COSTO_FISSO + numeroPagine * costoPagina;
     }
@@ -82,5 +82,5 @@ public class Book_Class {
     public static void setCostoPagina(double costo) {
         costoPagina = costo;
     }
-
+     */
 }

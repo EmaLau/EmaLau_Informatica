@@ -32,7 +32,7 @@
                           <Component id="tf_book_title" alignment="0" pref="100" max="32767" attributes="0"/>
                           <Component id="tf_editor_book" alignment="0" pref="100" max="32767" attributes="0"/>
                           <Component id="tf_number_pages_book" pref="100" max="32767" attributes="0"/>
-                          <Component id="tf_imei_book" alignment="0" pref="100" max="32767" attributes="0"/>
+                          <Component id="tf_spn_book" alignment="0" pref="100" max="32767" attributes="0"/>
                           <Component id="jLabel5" alignment="0" pref="100" max="32767" attributes="0"/>
                           <Component id="jLabel3" alignment="0" max="32767" attributes="0"/>
                           <Component id="jLabel4" alignment="0" max="32767" attributes="0"/>
@@ -82,7 +82,7 @@
               <EmptySpace max="-2" attributes="0"/>
               <Component id="jLabel5" min="-2" max="-2" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
-              <Component id="tf_imei_book" min="-2" max="-2" attributes="0"/>
+              <Component id="tf_spn_book" min="-2" max="-2" attributes="0"/>
               <EmptySpace max="32767" attributes="0"/>
               <Component id="btn_library" min="-2" max="-2" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
@@ -137,14 +137,14 @@
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel5">
       <Properties>
-        <Property name="text" type="java.lang.String" value="IMEI"/>
+        <Property name="text" type="java.lang.String" value="SPN"/>
         <Property name="horizontalTextPosition" type="int" value="0"/>
         <Property name="verifyInputWhenFocusTarget" type="boolean" value="false"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="tf_imei_book">
+    <Component class="javax.swing.JTextField" name="tf_spn_book">
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="tf_imei_bookActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="tf_spn_bookActionPerformed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JButton" name="btn_add">

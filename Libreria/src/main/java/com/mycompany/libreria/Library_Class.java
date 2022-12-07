@@ -6,6 +6,6 @@ package com.mycompany.libreria;
  */
 public class Library_Class {
     //Attributes
-    
+
     //Metods
 }

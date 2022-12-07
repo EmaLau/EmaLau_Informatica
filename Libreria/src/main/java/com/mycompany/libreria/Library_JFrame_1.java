@@ -9,6 +9,8 @@ package com.mycompany.libreria;
  * @author emalau
  */
 public class Library_JFrame_1 extends javax.swing.JFrame {
+
+    //Book_Class Book = new Book_Class();
     /**
      * Creates new form Libreria_Jframe_1
      */
@@ -34,7 +36,7 @@ public class Library_JFrame_1 extends javax.swing.JFrame {
         tf_editor_book = new javax.swing.JTextField();
         jLabel4 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
-        tf_imei_book = new javax.swing.JTextField();
+        tf_spn_book = new javax.swing.JTextField();
         btn_add = new javax.swing.JButton();
         btn_cancel = new javax.swing.JButton();
         btn_library = new javax.swing.JButton();
@@ -77,13 +79,13 @@ public class Library_JFrame_1 extends javax.swing.JFrame {
         jLabel4.setText("Editor");
         jLabel4.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
 
-        jLabel5.setText("IMEI");
+        jLabel5.setText("SPN");
         jLabel5.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         jLabel5.setVerifyInputWhenFocusTarget(false);
 
-        tf_imei_book.addActionListener(new java.awt.event.ActionListener() {
+        tf_spn_book.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                tf_imei_bookActionPerformed(evt);
+                tf_spn_bookActionPerformed(evt);
             }
         });
 
@@ -121,7 +123,7 @@ public class Library_JFrame_1 extends javax.swing.JFrame {
                             .addComponent(tf_book_title, javax.swing.GroupLayout.DEFAULT_SIZE, 100, Short.MAX_VALUE)
                             .addComponent(tf_editor_book, javax.swing.GroupLayout.DEFAULT_SIZE, 100, Short.MAX_VALUE)
                             .addComponent(tf_number_pages_book, javax.swing.GroupLayout.DEFAULT_SIZE, 100, Short.MAX_VALUE)
-                            .addComponent(tf_imei_book, javax.swing.GroupLayout.DEFAULT_SIZE, 100, Short.MAX_VALUE)
+                            .addComponent(tf_spn_book, javax.swing.GroupLayout.DEFAULT_SIZE, 100, Short.MAX_VALUE)
                             .addComponent(jLabel5, javax.swing.GroupLayout.DEFAULT_SIZE, 100, Short.MAX_VALUE)
                             .addComponent(jLabel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(jLabel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -162,7 +164,7 @@ public class Library_JFrame_1 extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel5)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(tf_imei_book, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(tf_spn_book, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(btn_library)
                 .addContainerGap())
@@ -187,9 +189,9 @@ public class Library_JFrame_1 extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_tf_editor_bookActionPerformed
 
-    private void tf_imei_bookActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tf_imei_bookActionPerformed
+    private void tf_spn_bookActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tf_spn_bookActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_tf_imei_bookActionPerformed
+    }//GEN-LAST:event_tf_spn_bookActionPerformed
 
     private void btn_addActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_addActionPerformed
         // TODO add your handling code here:
@@ -198,16 +200,16 @@ public class Library_JFrame_1 extends javax.swing.JFrame {
         book.setNumeroPagine(Integer.getInteger(tf_number_pages_book.getText()));
         book.setTitolo(tf_book_title.getText());
         book.setImiei(tf_imei_book.getText());
-        */
-        Book_Class Book= new Book_Class(tf_book_title.getText(), tf_author_book.getText(), Integer.valueOf(tf_number_pages_book.getText()), tf_imei_book.getText(), tf_editor_book.getText()); 
-        
+         */
+        Book_Class Book = new Book_Class(tf_book_title.getText(), tf_author_book.getText(), Integer.valueOf(tf_number_pages_book.getText()), tf_spn_book.getText(), tf_editor_book.getText());
+
     }//GEN-LAST:event_btn_addActionPerformed
 
     private void btn_cancelActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_cancelActionPerformed
         tf_author_book.setText(" ");
         tf_book_title.setText(" ");
         tf_editor_book.setText(" ");
-        tf_imei_book.setText(" ");
+        tf_spn_book.setText(" ");
         tf_number_pages_book.setText(" ");
     }//GEN-LAST:event_btn_cancelActionPerformed
 
@@ -263,7 +265,7 @@ public class Library_JFrame_1 extends javax.swing.JFrame {
     private javax.swing.JTextField tf_author_book;
     private javax.swing.JTextField tf_book_title;
     private javax.swing.JTextField tf_editor_book;
-    private javax.swing.JTextField tf_imei_book;
     private javax.swing.JTextField tf_number_pages_book;
+    private javax.swing.JTextField tf_spn_book;
     // End of variables declaration//GEN-END:variables
 }
