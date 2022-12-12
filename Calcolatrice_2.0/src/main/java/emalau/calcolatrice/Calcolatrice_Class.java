@@ -8,7 +8,6 @@ package emalau.calcolatrice;
 * @author EmaLau
 * @Version 2.0
 *
-*
  */
 public class Calcolatrice_Class {
 
@@ -63,7 +62,7 @@ public class Calcolatrice_Class {
             this.tot = 0;
             this.n1_string = null;
             this.n2_string = null;
-            this.operando = null;            
+            this.operando = null;
         }
     }
 
