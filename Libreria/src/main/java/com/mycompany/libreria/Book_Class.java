@@ -1,7 +1,6 @@
 package com.mycompany.libreria;
 
 /**
- *
  * @author Emanuele Lauro
  */
 public class Book_Class {
