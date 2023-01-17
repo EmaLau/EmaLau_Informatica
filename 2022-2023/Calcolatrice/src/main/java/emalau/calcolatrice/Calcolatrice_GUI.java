@@ -4,6 +4,8 @@ public class Calcolatrice_GUI extends javax.swing.JFrame {
 
     Calcolatrice_Class calc = new Calcolatrice_Class();
 
+    boolean point;
+
     public Calcolatrice_GUI() {
         initComponents();
     }
@@ -377,18 +379,24 @@ public class Calcolatrice_GUI extends javax.swing.JFrame {
     private void CancActionPerformed(java.awt.event.ActionEvent evt) {// GEN-FIRST:event_CancActionPerformed
         Calc_text.setText("0");
         calc.set_reset(true);
+        point = true;
+
     }// GEN-LAST:event_CancActionPerformed
 
     private void AddizioneActionPerformed(java.awt.event.ActionEvent evt) {// GEN-FIRST:event_AddizioneActionPerformed
         calc.set_n1(Double.parseDouble(Calc_text.getText()));
         calc.set_operando("+");
         Calc_text.setText("0");
+        point = true;
+
     }// GEN-LAST:event_AddizioneActionPerformed
 
     private void SottrazioneActionPerformed(java.awt.event.ActionEvent evt) {// GEN-FIRST:event_SottrazioneActionPerformed
         calc.set_n1(Double.parseDouble(Calc_text.getText()));
         calc.set_operando("-");
         Calc_text.setText("0");
+        point = true;
+
     }// GEN-LAST:event_SottrazioneActionPerformed
 
     private void DivisioneActionPerformed(java.awt.event.ActionEvent evt) {// GEN-FIRST:event_DivisioneActionPerformed
@@ -401,15 +409,22 @@ public class Calcolatrice_GUI extends javax.swing.JFrame {
         calc.set_n1(Double.parseDouble(Calc_text.getText()));
         calc.set_operando("*");
         Calc_text.setText("0");
+        point = true;
+
     }// GEN-LAST:event_MoltiplicazioneActionPerformed
 
     private void TotaleActionPerformed(java.awt.event.ActionEvent evt) {// GEN-FIRST:event_TotaleActionPerformed
         calc.set_n2(Double.parseDouble(Calc_text.getText()));
         Calc_text.setText(Double.toString(calc.get_tot()));
+        point = true;
+
     }// GEN-LAST:event_TotaleActionPerformed
 
     private void PuntoActionPerformed(java.awt.event.ActionEvent evt) {// GEN-FIRST:event_PuntoActionPerformed
-        set_Display(".");
+        if (point == true) {
+            set_Display(".");
+            point = false;
+        }
     }// GEN-LAST:event_PuntoActionPerformed
 
     /**
