@@ -217,7 +217,6 @@ public class Library_JFrame_1 extends javax.swing.JFrame {
         // TODO add your handling code here:
         Library_List_JFrame LLJ = new Library_List_JFrame();
         LLJ.setVisible(true);
-        LLJ.setLocation(this.location());
         this.setVisible(false);
     }//GEN-LAST:event_btn_libraryActionPerformed
 
