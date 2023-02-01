@@ -3,7 +3,7 @@ package com.mycompany.libreria;
 /**
  * @author Emanuele Lauro
  */
-public class Book_Class {
+public final class Book_Class {
 
     //Attributes
     private String titolo;
@@ -17,6 +17,9 @@ public class Book_Class {
     final double COSTO_FISSO = 5.5;
      */
     //Costructors
+    public Book_Class(){
+        
+    }
     public Book_Class(String Titolo, String Autore, int Pagine, String Spn, String produttore) {
         this.titolo = Titolo;
         this.autore = Autore;

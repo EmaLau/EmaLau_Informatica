@@ -72,7 +72,7 @@ public class Library_List_JFrame extends javax.swing.JFrame {
             }
         });
 
-        jl_n.setText("n");
+        jl_n.setText("0");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -164,12 +164,12 @@ public class Library_List_JFrame extends javax.swing.JFrame {
     private void jbn_lbookActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbn_lbookActionPerformed
 //left
 n--;
-jl_n.setText(Integer.toString(n));
-jl_author.setText(LC.getVolume(n).getAutore());
-jl_editor.setText(LC.getVolume(n).getProduttore());
-jl_np.setText(Integer.toString(LC.getVolume(n).getNumeroPagine()));
-jl_title.setText(LC.getVolume(n).getTitolo());
-jl_isbn.setText(LC.getVolume(n).getSpn());
+this.jl_n.setText(Integer.toString(n));
+this.jl_author.setText(LC.getVolume(n).getAutore());
+this.jl_editor.setText(LC.getVolume(n).getProduttore());
+this.jl_np.setText(Integer.toString(LC.getVolume(n).getNumeroPagine()));
+this.jl_title.setText(LC.getVolume(n).getTitolo());
+this.jl_isbn.setText(LC.getVolume(n).getSpn());
 
 
     }//GEN-LAST:event_jbn_lbookActionPerformed
@@ -177,12 +177,13 @@ jl_isbn.setText(LC.getVolume(n).getSpn());
     private void jbn_rbookActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbn_rbookActionPerformed
 //right
 n++;
-jl_n.setText(Integer.toString(n));
-jl_author.setText(LC.getVolume(n).getAutore());
-jl_editor.setText(LC.getVolume(n).getProduttore());
-jl_np.setText(Integer.toString(LC.getVolume(n).getNumeroPagine()));
-jl_title.setText(LC.getVolume(n).getTitolo());
-jl_isbn.setText(LC.getVolume(n).getSpn());
+this.jl_n.setText(Integer.toString(n));
+this.jl_author.setText(LC.getVolume(n).getAutore());
+this.jl_editor.setText(LC.getVolume(n).getProduttore());
+this.jl_np.setText(Integer.toString(LC.getVolume(n).getNumeroPagine()));
+this.jl_title.setText(LC.getVolume(n).getTitolo());
+this.jl_isbn.setText(LC.getVolume(n).getSpn());
+
     }//GEN-LAST:event_jbn_rbookActionPerformed
 
     /**

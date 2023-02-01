@@ -10,7 +10,9 @@ package com.mycompany.libreria;
  */
 public class Library_JFrame_1 extends javax.swing.JFrame {
 
-    //Book_Class Book = new Book_Class();
+    //static Book_Class[] Book = new Book_Class[Library_Class.max_volumi];
+    //int indice = 0;
+    Book_Class bc = new Book_Class();
     /**
      * Creates new form Libreria_Jframe_1
      */
@@ -205,14 +207,20 @@ public class Library_JFrame_1 extends javax.swing.JFrame {
     }//GEN-LAST:event_tf_spn_bookActionPerformed
 
     private void btn_addActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_addActionPerformed
-        // TODO add your handling code here:
         /*
         Book.setAutore(tf_author_book.getText());
         Book.setNumeroPagine(Integer.getInteger(tf_number_pages_book.getText()));
         Book.setTitolo(tf_book_title.getText());
         Book.setSpn(tf_spn_book.getText());
-        */
-        Book_Class Book = new Book_Class(tf_book_title.getText(), tf_author_book.getText(), Integer.parseInt(tf_number_pages_book.getText()), tf_spn_book.getText(), tf_editor_book.getText());
+         */
+        //Book[indice]
+        bc = new Book_Class(tf_book_title.getText(), tf_author_book.getText(), Integer.parseInt(tf_number_pages_book.getText()), tf_spn_book.getText(), tf_editor_book.getText());
+        //indice++;
+        tf_author_book.setText(" ");
+        tf_book_title.setText(" ");
+        tf_editor_book.setText(" ");
+        tf_spn_book.setText(" ");
+        tf_number_pages_book.setText(" ");
 
     }//GEN-LAST:event_btn_addActionPerformed
 
