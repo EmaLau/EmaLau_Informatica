@@ -6,13 +6,28 @@ package com.mycompany.libreria;
  */
 public class Library_List_JFrame extends javax.swing.JFrame {
 
-    Library_Class LC = new Library_Class();
-    int n;
+    static Book_Class[] Book = new Book_Class[Library_Class.max_volumi];
+    int count;
+
     /**
      * Creates new form Library_List_JFrame
+     *
+     * @param lib
      */
-    public Library_List_JFrame() {
+    public Library_List_JFrame(Book_Class[] book) {
         initComponents();
+        this.Book = book;
+        set_book(count);
+
+    }
+
+    private void set_book(int indice) {
+        this.jl_n.setText(Integer.toString(count));
+        this.jl_author.setText(Book[indice].getAutore());
+        this.jl_editor.setText(Book[indice].getProduttore());
+        this.jl_np.setText(Integer.toString(Book[indice].getNumeroPagine()));
+        this.jl_title.setText(Book[indice].getTitolo());
+        this.jl_isbn.setText(Book[indice].getSpn());
     }
 
     /**
@@ -162,28 +177,20 @@ public class Library_List_JFrame extends javax.swing.JFrame {
     }//GEN-LAST:event_btn_anbActionPerformed
 
     private void jbn_lbookActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbn_lbookActionPerformed
-//left
-n--;
-this.jl_n.setText(Integer.toString(n));
-this.jl_author.setText(LC.getVolume(n).getAutore());
-this.jl_editor.setText(LC.getVolume(n).getProduttore());
-this.jl_np.setText(Integer.toString(LC.getVolume(n).getNumeroPagine()));
-this.jl_title.setText(LC.getVolume(n).getTitolo());
-this.jl_isbn.setText(LC.getVolume(n).getSpn());
-
+//Left
+        if (count != 0) {
+            count--;
+            set_book(count);
+        }
 
     }//GEN-LAST:event_jbn_lbookActionPerformed
 
     private void jbn_rbookActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbn_rbookActionPerformed
 //right
-n++;
-this.jl_n.setText(Integer.toString(n));
-this.jl_author.setText(LC.getVolume(n).getAutore());
-this.jl_editor.setText(LC.getVolume(n).getProduttore());
-this.jl_np.setText(Integer.toString(LC.getVolume(n).getNumeroPagine()));
-this.jl_title.setText(LC.getVolume(n).getTitolo());
-this.jl_isbn.setText(LC.getVolume(n).getSpn());
-
+        if (count >= 0 && count <= 0) {
+            count++;
+            set_book(count);
+        }
     }//GEN-LAST:event_jbn_rbookActionPerformed
 
     /**
@@ -216,7 +223,7 @@ this.jl_isbn.setText(LC.getVolume(n).getSpn());
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new Library_List_JFrame().setVisible(true);
+                new Library_List_JFrame(Book).setVisible(true);
             }
         });
     }
