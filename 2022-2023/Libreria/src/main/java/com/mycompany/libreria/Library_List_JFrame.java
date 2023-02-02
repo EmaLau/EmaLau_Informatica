@@ -6,13 +6,13 @@ package com.mycompany.libreria;
  */
 public class Library_List_JFrame extends javax.swing.JFrame {
 
-    static Book_Class[] Book = new Book_Class[15];
-    int count=0;
+    static Book_Class[] Book = new Book_Class[Library_Class.max_volumi];
+    int count = 0;
 
     /**
      * Creates new form Library_List_JFrame
      *
-     * 
+     *
      * @param book
      */
     public Library_List_JFrame(Book_Class[] book) {
