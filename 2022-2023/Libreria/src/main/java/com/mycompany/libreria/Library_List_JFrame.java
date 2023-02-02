@@ -6,13 +6,14 @@ package com.mycompany.libreria;
  */
 public class Library_List_JFrame extends javax.swing.JFrame {
 
-    static Book_Class[] Book = new Book_Class[Library_Class.max_volumi];
-    int count;
+    static Book_Class[] Book = new Book_Class[15];
+    int count=0;
 
     /**
      * Creates new form Library_List_JFrame
      *
-     * @param lib
+     * 
+     * @param book
      */
     public Library_List_JFrame(Book_Class[] book) {
         initComponents();
@@ -187,7 +188,7 @@ public class Library_List_JFrame extends javax.swing.JFrame {
 
     private void jbn_rbookActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbn_rbookActionPerformed
 //right
-        if (count >= 0 && count <= 0) {
+        if (count >= 0 && count <= 15) {
             count++;
             set_book(count);
         }
@@ -227,6 +228,7 @@ public class Library_List_JFrame extends javax.swing.JFrame {
             }
         });
     }
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btn_anb;
