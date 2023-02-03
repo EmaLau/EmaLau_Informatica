@@ -23,12 +23,22 @@ public class Library_List_JFrame extends javax.swing.JFrame {
     }
 
     private void set_book(int indice) {
-        this.jl_n.setText(Integer.toString(count));
-        this.jl_author.setText(Book[indice].getAutore());
-        this.jl_editor.setText(Book[indice].getProduttore());
-        this.jl_np.setText(Integer.toString(Book[indice].getNumeroPagine()));
-        this.jl_title.setText(Book[indice].getTitolo());
-        this.jl_isbn.setText(Book[indice].getSpn());
+        if ("".equals(Book[indice].getAutore())) {
+
+            this.jl_n.setText("");
+            this.jl_author.setText("");
+            this.jl_editor.setText("");
+            this.jl_np.setText("");
+            this.jl_title.setText("");
+            this.jl_isbn.setText("");
+        } else {
+            this.jl_n.setText(Integer.toString(count));
+            this.jl_author.setText(Book[indice].getAutore());
+            this.jl_editor.setText(Book[indice].getProduttore());
+            this.jl_np.setText(Integer.toString(Book[indice].getNumeroPagine()));
+            this.jl_title.setText(Book[indice].getTitolo());
+            this.jl_isbn.setText(Book[indice].getSpn());
+        }
     }
 
     /**
