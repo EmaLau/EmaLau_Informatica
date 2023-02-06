@@ -1,13 +1,5 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
- */
 package com.mycompany.libreria;
 
-/**
- *
- * @author emalau
- */
 public class Library_Research_JFrame extends javax.swing.JFrame {
 
     /**
@@ -28,12 +20,14 @@ public class Library_Research_JFrame extends javax.swing.JFrame {
 
         btn_anb = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
-        jtf_titolo = new javax.swing.JTextField();
+        jtf_title = new javax.swing.JTextField();
         jLabel2 = new javax.swing.JLabel();
-        jtf_autore = new javax.swing.JTextField();
+        jtf_author = new javax.swing.JTextField();
         jLabel3 = new javax.swing.JLabel();
         jtf_isbn = new javax.swing.JTextField();
         btn_search = new javax.swing.JButton();
+        jLabel4 = new javax.swing.JLabel();
+        jtf_editor = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -44,19 +38,19 @@ public class Library_Research_JFrame extends javax.swing.JFrame {
             }
         });
 
-        jLabel1.setText("Titolo");
+        jLabel1.setText("Title");
 
-        jtf_titolo.addActionListener(new java.awt.event.ActionListener() {
+        jtf_title.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jtf_titoloActionPerformed(evt);
+                jtf_titleActionPerformed(evt);
             }
         });
 
-        jLabel2.setText("Autore");
+        jLabel2.setText("Author");
 
-        jtf_autore.addActionListener(new java.awt.event.ActionListener() {
+        jtf_author.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jtf_autoreActionPerformed(evt);
+                jtf_authorActionPerformed(evt);
             }
         });
 
@@ -75,6 +69,14 @@ public class Library_Research_JFrame extends javax.swing.JFrame {
             }
         });
 
+        jLabel4.setText("Editor");
+
+        jtf_editor.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jtf_editorActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -88,9 +90,11 @@ public class Library_Research_JFrame extends javax.swing.JFrame {
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel1)
-                            .addComponent(jtf_titolo, javax.swing.GroupLayout.PREFERRED_SIZE, 165, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jtf_title, javax.swing.GroupLayout.PREFERRED_SIZE, 165, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jLabel2)
-                            .addComponent(jtf_autore, javax.swing.GroupLayout.PREFERRED_SIZE, 165, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jtf_author, javax.swing.GroupLayout.PREFERRED_SIZE, 165, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel4)
+                            .addComponent(jtf_editor, javax.swing.GroupLayout.PREFERRED_SIZE, 165, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jLabel3)
                             .addComponent(jtf_isbn, javax.swing.GroupLayout.PREFERRED_SIZE, 165, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(btn_search))
@@ -103,18 +107,22 @@ public class Library_Research_JFrame extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(jLabel1)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jtf_titolo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jtf_title, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel2)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jtf_autore, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jtf_author, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel4)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jtf_editor, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel3)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jtf_isbn, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(btn_search)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 74, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 24, Short.MAX_VALUE)
                 .addComponent(btn_anb)
                 .addContainerGap())
         );
@@ -129,20 +137,24 @@ public class Library_Research_JFrame extends javax.swing.JFrame {
     }//GEN-LAST:event_btn_anbActionPerformed
 
     private void btn_searchActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_searchActionPerformed
-        // TODO add your handling code here:
+
     }//GEN-LAST:event_btn_searchActionPerformed
 
-    private void jtf_titoloActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jtf_titoloActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jtf_titoloActionPerformed
+    private void jtf_titleActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jtf_titleActionPerformed
 
-    private void jtf_autoreActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jtf_autoreActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jtf_autoreActionPerformed
+    }//GEN-LAST:event_jtf_titleActionPerformed
+
+    private void jtf_authorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jtf_authorActionPerformed
+
+    }//GEN-LAST:event_jtf_authorActionPerformed
 
     private void jtf_isbnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jtf_isbnActionPerformed
-        // TODO add your handling code here:
+
     }//GEN-LAST:event_jtf_isbnActionPerformed
+
+    private void jtf_editorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jtf_editorActionPerformed
+
+    }//GEN-LAST:event_jtf_editorActionPerformed
 
     /**
      * @param args the command line arguments
@@ -186,8 +198,10 @@ public class Library_Research_JFrame extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
-    private javax.swing.JTextField jtf_autore;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JTextField jtf_author;
+    private javax.swing.JTextField jtf_editor;
     private javax.swing.JTextField jtf_isbn;
-    private javax.swing.JTextField jtf_titolo;
+    private javax.swing.JTextField jtf_title;
     // End of variables declaration//GEN-END:variables
 }

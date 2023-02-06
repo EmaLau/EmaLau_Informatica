@@ -10,28 +10,29 @@ public final class Book_Class {
     private String autore;
     private String produttore;
     private int numeroPagine;
-    private String spn;
+    private String isbn;
 
     /*
     private static double costoPagina = 0.05;
     final double COSTO_FISSO = 5.5;
      */
     //Costructors
-    public Book_Class(){
-        
+    public Book_Class() {
+
     }
-    public Book_Class(String Titolo, String Autore, int Pagine, String Spn, String produttore) {
+
+    public Book_Class(String Titolo, String Autore, int Pagine, String Isbn, String produttore) {
         this.titolo = Titolo;
         this.autore = Autore;
         this.numeroPagine = Pagine;
-        this.spn = Spn;
+        this.isbn = Isbn;
         this.produttore = produttore;
     }
 
     public Book_Class(Book_Class Book) {
         this.titolo = getTitolo();
         this.autore = getAutore();
-        this.spn = getSpn();
+        this.isbn = getSpn();
         this.numeroPagine = getNumeroPagine();
     }
 
@@ -52,12 +53,12 @@ public final class Book_Class {
         return autore;
     }
 
-    public void setSpn(String Spn) {
-        this.spn = Spn;
+    public void setSpn(String Isbn) {
+        this.isbn = Isbn;
     }
 
     public String getSpn() {
-        return spn;
+        return isbn;
     }
 
     public void setProduttore(String produttore) {
