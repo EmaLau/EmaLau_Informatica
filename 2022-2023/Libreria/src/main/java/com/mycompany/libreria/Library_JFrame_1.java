@@ -1,5 +1,9 @@
 package com.mycompany.libreria;
 
+/**
+ *
+ * @author emalau
+ */
 public class Library_JFrame_1 extends javax.swing.JFrame {
 
     static Book_Class[] Book = new Book_Class[Library_Class.max_volumi];
