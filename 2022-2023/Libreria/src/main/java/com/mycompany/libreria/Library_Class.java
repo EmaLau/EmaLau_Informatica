@@ -7,7 +7,7 @@ package com.mycompany.libreria;
 public class Library_Class {
 
     //Attributes
-    public static final int max_volumi = 15;
+    public static final int max_volumi = 20;
     private Book_Class volumi[];
 
     //Costructor

@@ -6,7 +6,8 @@ package com.mycompany.libreria;
  */
 public class Library_JFrame_1 extends javax.swing.JFrame {
 
-    static Book_Class[] Book = new Book_Class[Library_Class.max_volumi];
+    static final int max_volumi = Library_Class.max_volumi;
+    static Book_Class[] Book = new Book_Class[max_volumi];
     int indice = 0;
 
     /**

@@ -6,8 +6,10 @@ package com.mycompany.libreria;
  */
 public class Library_List_JFrame extends javax.swing.JFrame {
 
-    static Book_Class[] Book = new Book_Class[Library_Class.max_volumi];
+    static final int max_volumi = Library_Class.max_volumi;
+    static Book_Class[] Book = new Book_Class[max_volumi];
     int count = 0;
+
     /**
      * Creates new form Library_List_JFrame
      *
@@ -22,9 +24,10 @@ public class Library_List_JFrame extends javax.swing.JFrame {
     }
 
     private void searcher(String word) {
-        for (int i = 0; i<count; i++) {
-            if(word.equals(Book[i].getTitolo()))
+        for (int i = 0; i < count; i++) {
+            if (word.equals(Book[i].getTitolo())) {
                 set_book(i);
+            }
         }
     }
 
@@ -227,15 +230,15 @@ public class Library_List_JFrame extends javax.swing.JFrame {
 
     private void jbn_rbookActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbn_rbookActionPerformed
 //right
-        if (count >= 0 && count <= 15) {
+        if (count >= 0 && count <= max_volumi) {
             count++;
             set_book(count);
         }
     }//GEN-LAST:event_jbn_rbookActionPerformed
 
     private void btn_searchActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_searchActionPerformed
-       searcher(tf_search.getText());
-        
+        searcher(tf_search.getText());
+
     }//GEN-LAST:event_btn_searchActionPerformed
 
     private void tf_searchActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tf_searchActionPerformed
