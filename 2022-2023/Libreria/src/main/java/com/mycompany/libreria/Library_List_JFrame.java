@@ -73,8 +73,8 @@ public class Library_List_JFrame extends javax.swing.JFrame {
         jbn_lbook = new javax.swing.JButton();
         jbn_rbook = new javax.swing.JButton();
         jl_n = new javax.swing.JLabel();
-        btn_search = new javax.swing.JButton();
         tf_search = new javax.swing.JTextField();
+        jbn_search = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -111,16 +111,16 @@ public class Library_List_JFrame extends javax.swing.JFrame {
 
         jl_n.setText("0");
 
-        btn_search.setText("SEARCH");
-        btn_search.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btn_searchActionPerformed(evt);
-            }
-        });
-
         tf_search.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 tf_searchActionPerformed(evt);
+            }
+        });
+
+        jbn_search.setText("Search");
+        jbn_search.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jbn_searchActionPerformed(evt);
             }
         });
 
@@ -132,10 +132,16 @@ public class Library_List_JFrame extends javax.swing.JFrame {
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addGap(0, 272, Short.MAX_VALUE)
+                        .addGap(0, 0, Short.MAX_VALUE)
                         .addComponent(btn_anb))
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(jLabel1)
+                                .addGap(18, 18, 18)
+                                .addComponent(jl_title)
+                                .addGap(182, 182, 182)
+                                .addComponent(tf_search, javax.swing.GroupLayout.DEFAULT_SIZE, 84, Short.MAX_VALUE))
                             .addGroup(layout.createSequentialGroup()
                                 .addComponent(jLabel2)
                                 .addGap(18, 18, 18)
@@ -162,15 +168,9 @@ public class Library_List_JFrame extends javax.swing.JFrame {
                                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                                         .addGap(8, 8, 8)
                                         .addComponent(jbn_rbook)))))
-                        .addGap(0, 0, Short.MAX_VALUE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(jLabel1)
-                        .addGap(18, 18, 18)
-                        .addComponent(jl_title)
-                        .addGap(155, 155, 155)
-                        .addComponent(tf_search)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(btn_search, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                        .addComponent(jbn_search)
+                        .addGap(15, 15, 15)))
                 .addContainerGap())
         );
         layout.setVerticalGroup(
@@ -178,16 +178,17 @@ public class Library_List_JFrame extends javax.swing.JFrame {
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel1)
+                            .addComponent(jl_title))
+                        .addGap(24, 24, 24)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel2)
+                            .addComponent(jl_author)))
                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(jLabel1)
-                        .addComponent(jl_title))
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(btn_search)
-                        .addComponent(tf_search, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel2)
-                    .addComponent(jl_author))
+                        .addComponent(tf_search, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jbn_search)))
                 .addGap(24, 24, 24)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel3)
@@ -236,14 +237,13 @@ public class Library_List_JFrame extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_jbn_rbookActionPerformed
 
-    private void btn_searchActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_searchActionPerformed
-        searcher(tf_search.getText());
-
-    }//GEN-LAST:event_btn_searchActionPerformed
-
     private void tf_searchActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tf_searchActionPerformed
-
+        
     }//GEN-LAST:event_tf_searchActionPerformed
+
+    private void jbn_searchActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbn_searchActionPerformed
+        searcher(tf_search.getText());
+    }//GEN-LAST:event_jbn_searchActionPerformed
 
     /**
      * @param args the command line arguments
@@ -283,7 +283,6 @@ public class Library_List_JFrame extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btn_anb;
-    private javax.swing.JButton btn_search;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
@@ -291,6 +290,7 @@ public class Library_List_JFrame extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel5;
     private javax.swing.JButton jbn_lbook;
     private javax.swing.JButton jbn_rbook;
+    private javax.swing.JButton jbn_search;
     private javax.swing.JLabel jl_author;
     private javax.swing.JLabel jl_editor;
     private javax.swing.JLabel jl_isbn;
