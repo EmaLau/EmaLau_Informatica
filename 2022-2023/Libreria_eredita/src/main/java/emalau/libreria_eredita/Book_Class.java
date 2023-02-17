@@ -24,6 +24,15 @@ public class Book_Class {
         this.Pagine = Pagine;
     }
 
+    public Book_Class(Book_Class Book) {
+        this.Autore = getAutore();
+        this.ISBN = getISBN();
+        this.Titolo = getTitolo();
+        this.Pagine = getPagine();
+        this.Editore = getEditore();
+
+    }
+
     public void setAutore(String Autore) {
         this.Autore = Autore;
     }
