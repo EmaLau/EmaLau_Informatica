@@ -7,6 +7,7 @@ package emalau.veicoli_eredita;
 public class Veicoli_eredita {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        private int ruote;
+        private String motore;
     }
 }
