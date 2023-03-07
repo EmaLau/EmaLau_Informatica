@@ -85,8 +85,8 @@ public class Calcolatrice_Tarocca_GUI extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btn_TotalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_TotalActionPerformed
-       CTC.setNum1(Double.parseDouble(tf_num1.getText()));
-       CTC.setNum2(Double.parseDouble(tf_num2.getText()));
+       CTC.setNum1(Integer.parseInt(tf_num1.getText()));
+       CTC.setNum2(Integer.parseInt(tf_num2.getText()));
        tf_total.setText(CTC.getTotal().toString());
     }//GEN-LAST:event_btn_TotalActionPerformed
 

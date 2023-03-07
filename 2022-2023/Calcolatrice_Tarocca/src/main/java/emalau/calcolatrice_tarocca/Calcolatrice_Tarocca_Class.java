@@ -6,11 +6,11 @@ package emalau.calcolatrice_tarocca;
  */
 public class Calcolatrice_Tarocca_Class {
 
-    private double num1;
-    private double num2;
+    private int num1;
+    private int num2;
     private String total;
 
-    public void setNum1(double num1) {
+    public void setNum1(int num1) {
         this.num1 = num1;
     }
 
@@ -18,7 +18,7 @@ public class Calcolatrice_Tarocca_Class {
         return num1;
     }
 
-    public void setNum2(double num2) {
+    public void setNum2(int num2) {
         this.num2 = num2;
     }
 
@@ -28,7 +28,7 @@ public class Calcolatrice_Tarocca_Class {
 
     public String getTotal() {
         try {
-            return Double.toString(num1 / num2);
+            return Integer.toString(num1 / num2);
         } catch (ArithmeticException exception) {
             return "impossibile fare " + num1 + "/" + num2;
         }
