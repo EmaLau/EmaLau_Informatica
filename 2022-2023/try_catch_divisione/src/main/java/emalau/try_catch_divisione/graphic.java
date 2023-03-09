@@ -40,17 +40,17 @@ public class graphic extends javax.swing.JFrame {
 
         tf_num1 = new javax.swing.JTextField();
         tf_num2 = new javax.swing.JTextField();
-        jButton1 = new javax.swing.JButton();
+        btn_dividi = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         lb_risultato = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jButton1.setText("Dividi");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        btn_dividi.setText("Dividi");
+        btn_dividi.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                btn_dividiActionPerformed(evt);
             }
         });
 
@@ -73,7 +73,7 @@ public class graphic extends javax.swing.JFrame {
                             .addComponent(tf_num2, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(tf_num1, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(53, 53, 53)
-                        .addComponent(jButton1)))
+                        .addComponent(btn_dividi)))
                 .addContainerGap(134, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
@@ -88,7 +88,7 @@ public class graphic extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(tf_num2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton1))
+                    .addComponent(btn_dividi))
                 .addGap(18, 18, 18)
                 .addComponent(lb_risultato)
                 .addContainerGap(185, Short.MAX_VALUE))
@@ -97,9 +97,9 @@ public class graphic extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void btn_dividiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_dividiActionPerformed
         lb_risultato.setText(calcoli(Integer.parseInt(tf_num1.getText()), Integer.parseInt(tf_num2.getText())));
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_btn_dividiActionPerformed
 
     /**
      * @param args the command line arguments
@@ -137,7 +137,7 @@ public class graphic extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
+    private javax.swing.JButton btn_dividi;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel lb_risultato;
