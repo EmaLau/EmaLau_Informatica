@@ -17,13 +17,16 @@ public class graphic extends javax.swing.JFrame {
         initComponents();
     }
 
-    private String calcoli(int num1, int num2) {
+    private String calcoli(String num1, String num2) {
         String Risultato;
+        int numero1, numero2;
         int divisione;
         try {
-            divisione = num1 / num2;
+            numero1 = Integer.parseInt(num1);
+            numero2 = Integer.parseInt(num2);
+            divisione = numero1 / numero2;
             Risultato = Integer.toString(divisione);
-        } catch (ArithmeticException ex) {
+        } catch (ArithmeticException | NumberFormatException ex) {
             Risultato = "Errore: " + ex.getMessage();
         }
         return Risultato;
@@ -98,7 +101,8 @@ public class graphic extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btn_dividiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_dividiActionPerformed
-        lb_risultato.setText(calcoli(Integer.parseInt(tf_num1.getText()), Integer.parseInt(tf_num2.getText())));
+        //lb_risultato.setText(calcoli(Integer.parseInt(tf_num1.getText()), Integer.parseInt(tf_num2.getText())));
+        lb_risultato.setText(calcoli(tf_num1.getText(), tf_num2.getText()));
     }//GEN-LAST:event_btn_dividiActionPerformed
 
     /**
