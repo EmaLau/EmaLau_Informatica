@@ -75,7 +75,7 @@
                               </Group>
                               <EmptySpace max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="btn_multiplicazione" min="-2" pref="50" max="-2" attributes="0"/>
+                                  <Component id="btn_addizione" min="-2" pref="50" max="-2" attributes="0"/>
                                   <Component id="btn_sottrazione" min="-2" pref="50" max="-2" attributes="0"/>
                               </Group>
                           </Group>
@@ -123,11 +123,11 @@
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="btn_0" alignment="3" min="-2" pref="50" max="-2" attributes="0"/>
-                  <Component id="btn_multiplicazione" alignment="3" min="-2" pref="50" max="-2" attributes="0"/>
+                  <Component id="btn_addizione" alignment="3" min="-2" pref="50" max="-2" attributes="0"/>
                   <Component id="btn_punto" alignment="3" min="-2" pref="50" max="-2" attributes="0"/>
                   <Component id="btn_uguale" alignment="3" min="-2" pref="50" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace pref="9" max="32767" attributes="0"/>
+              <EmptySpace max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -332,7 +332,7 @@
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btn_sottrazioneActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="btn_multiplicazione">
+    <Component class="javax.swing.JButton" name="btn_addizione">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Helvetica Neue" size="14" style="0"/>
@@ -340,7 +340,7 @@
         <Property name="text" type="java.lang.String" value="+"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btn_multiplicazioneActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btn_addizioneActionPerformed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JButton" name="btn_punto">

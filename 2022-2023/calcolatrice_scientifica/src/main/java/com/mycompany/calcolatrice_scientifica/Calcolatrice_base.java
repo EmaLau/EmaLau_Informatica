@@ -10,6 +10,7 @@ package com.mycompany.calcolatrice_scientifica;
  */
 public class Calcolatrice_base extends javax.swing.JFrame {
 
+    Calcoli_base calc = new Calcoli_base();
     /**
      * Creates new form Calcolatrice_base
      */
@@ -54,7 +55,7 @@ public class Calcolatrice_base extends javax.swing.JFrame {
         btn_divisione = new javax.swing.JButton();
         btn_moltiplicazione = new javax.swing.JButton();
         btn_sottrazione = new javax.swing.JButton();
-        btn_multiplicazione = new javax.swing.JButton();
+        btn_addizione = new javax.swing.JButton();
         btn_punto = new javax.swing.JButton();
         btn_uguale = new javax.swing.JButton();
 
@@ -205,11 +206,11 @@ public class Calcolatrice_base extends javax.swing.JFrame {
             }
         });
 
-        btn_multiplicazione.setFont(new java.awt.Font("Helvetica Neue", 0, 14)); // NOI18N
-        btn_multiplicazione.setText("+");
-        btn_multiplicazione.addActionListener(new java.awt.event.ActionListener() {
+        btn_addizione.setFont(new java.awt.Font("Helvetica Neue", 0, 14)); // NOI18N
+        btn_addizione.setText("+");
+        btn_addizione.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btn_multiplicazioneActionPerformed(evt);
+                btn_addizioneActionPerformed(evt);
             }
         });
 
@@ -279,7 +280,7 @@ public class Calcolatrice_base extends javax.swing.JFrame {
                                         .addComponent(btn_uguale, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(btn_multiplicazione, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(btn_addizione, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(btn_sottrazione, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))))
                         .addGap(0, 303, Short.MAX_VALUE)))
                 .addContainerGap())
@@ -316,10 +317,10 @@ public class Calcolatrice_base extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btn_0, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btn_multiplicazione, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btn_addizione, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(btn_punto, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(btn_uguale, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(9, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         pack();
@@ -373,11 +374,13 @@ public class Calcolatrice_base extends javax.swing.JFrame {
     }//GEN-LAST:event_btn_puntoActionPerformed
 
     private void btn_ACActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_ACActionPerformed
-        // TODO add your handling code here:
+        Calc_text.setText("0");
+        calc.set_reset(true);
+        punto = true;
     }//GEN-LAST:event_btn_ACActionPerformed
 
     private void btn_cancelActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_cancelActionPerformed
-        // TODO add your handling code here:
+        Calc_text.setText(Calc_text.getText().substring(0, Calc_text.getText().length()-1));
     }//GEN-LAST:event_btn_cancelActionPerformed
 
     private void btn_parentesi_sinistraActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_parentesi_sinistraActionPerformed
@@ -389,23 +392,36 @@ public class Calcolatrice_base extends javax.swing.JFrame {
     }//GEN-LAST:event_btn_parentesi_destraActionPerformed
 
     private void btn_divisioneActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_divisioneActionPerformed
-        // TODO add your handling code here:
+        calc.set_n1(Calc_text.getText());
+        calc.set_operando("/");
+        set_Display("÷");
+        punto = true;        
     }//GEN-LAST:event_btn_divisioneActionPerformed
 
     private void btn_moltiplicazioneActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_moltiplicazioneActionPerformed
-        // TODO add your handling code here:
+        calc.set_n1(Calc_text.getText());
+        calc.set_operando("*");
+        set_Display("x");
+        punto = true;
     }//GEN-LAST:event_btn_moltiplicazioneActionPerformed
 
     private void btn_sottrazioneActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_sottrazioneActionPerformed
-        // TODO add your handling code here:
+        calc.set_n1(Calc_text.getText());
+        calc.set_operando("/");
+        set_Display("÷");
+        punto = true;
     }//GEN-LAST:event_btn_sottrazioneActionPerformed
 
-    private void btn_multiplicazioneActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_multiplicazioneActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btn_multiplicazioneActionPerformed
+    private void btn_addizioneActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_addizioneActionPerformed
+        calc.set_n1(Calc_text.getText());
+        calc.set_operando("+");
+        set_Display("+");
+        punto = true;
+    }//GEN-LAST:event_btn_addizioneActionPerformed
 
     private void btn_ugualeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_ugualeActionPerformed
-        // TODO add your handling code here:
+        calc.set_n2(Calc_text.getText());
+        Calc_text.setText(Calc_text.getText() + " = " + Double.toString(calc.get_tot()));
     }//GEN-LAST:event_btn_ugualeActionPerformed
 
     private void Calc_textActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Calc_textActionPerformed
@@ -460,10 +476,10 @@ public class Calcolatrice_base extends javax.swing.JFrame {
     private javax.swing.JButton btn_8;
     private javax.swing.JButton btn_9;
     private javax.swing.JButton btn_AC;
+    private javax.swing.JButton btn_addizione;
     private javax.swing.JButton btn_cancel;
     private javax.swing.JButton btn_divisione;
     private javax.swing.JButton btn_moltiplicazione;
-    private javax.swing.JButton btn_multiplicazione;
     private javax.swing.JButton btn_parentesi_destra;
     private javax.swing.JButton btn_parentesi_sinistra;
     private javax.swing.JButton btn_punto;
