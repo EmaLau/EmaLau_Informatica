@@ -42,7 +42,7 @@ public class Calcoli_base {
                 case "/" ->
                     tot = n1 / n2;
                 default -> {
-                    \
+                    
                 }
             }
         }
