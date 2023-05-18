@@ -269,23 +269,28 @@ public class Calcolatrice_GUI extends javax.swing.JFrame {
                         .addGap(18, 18, 18)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addGroup(layout.createSequentialGroup()
-                                .addComponent(Divisione, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
-                                .addComponent(Canc, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                            .addComponent(Sottrazione, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(Addizione, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGroup(layout.createSequentialGroup()
                                 .addComponent(Moltiplicazione, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(18, 18, 18)
-                                .addComponent(Totale, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(btn_sin, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(btn_pi, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(btn_sqrt, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(btn_tan, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(btn_cos, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(0, 9, Short.MAX_VALUE)))
+                                .addComponent(Totale, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(layout.createSequentialGroup()
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(Divisione, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(Sottrazione, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(Addizione, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGap(18, 18, 18)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(Canc, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                            .addComponent(btn_sin, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(btn_cos, javax.swing.GroupLayout.PREFERRED_SIZE, 1, Short.MAX_VALUE))
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(btn_pi, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(btn_tan, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))))))
+                        .addGap(18, 18, 18)
+                        .addComponent(btn_sqrt, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(0, 102, Short.MAX_VALUE)))
                 .addContainerGap())
         );
         layout.setVerticalGroup(
@@ -293,61 +298,63 @@ public class Calcolatrice_GUI extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(Calc_text, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(18, 18, 18)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(Btn_9, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(Btn_8, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(Btn_7, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(Addizione, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(Addizione, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(btn_sin, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(btn_tan, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(btn_sqrt, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(18, 18, 18)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(Btn_4, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(Btn_6, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(Btn_5, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(Sottrazione, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(18, 18, 18)
+                            .addComponent(Sottrazione, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(58, 58, 58)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(Btn_1, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(Btn_2, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(Btn_3, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(Divisione, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(Canc, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(18, 18, 18)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(Btn_0, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(Moltiplicazione, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(Totale, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(Punto, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(btn_sin, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(btn_cos, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(btn_tan, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(btn_pi, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(btn_sqrt, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addContainerGap())))
+                            .addComponent(btn_cos, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(btn_pi, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(Btn_1, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(Btn_2, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(Btn_3, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(Divisione, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(Canc, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(Btn_0, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(Moltiplicazione, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(Totale, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(Punto, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
     private void btn_sinActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_sinActionPerformed
-        Calc_text.setText(String.valueOf(Math.sin(Double.parseDouble(Calc_text.getText()))));
+        calc.set_sin(Double.parseDouble(Calc_text.getText()));
+        Calc_text.setText(String.valueOf(calc.get_sin()));
+        point = true;
     }//GEN-LAST:event_btn_sinActionPerformed
 
     private void btn_cosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_cosActionPerformed
-        Calc_text.setText(String.valueOf(Math.cos(Double.parseDouble(Calc_text.getText()))));
+        calc.set_cos(Double.parseDouble(Calc_text.getText()));
+        Calc_text.setText(String.valueOf(calc.get_cos()));
+        point = true;
     }//GEN-LAST:event_btn_cosActionPerformed
 
     private void btn_tanActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_tanActionPerformed
-        Calc_text.setText(String.valueOf(Math.tan(Double.parseDouble(Calc_text.getText()))));
+        calc.set_tan(Double.parseDouble(Calc_text.getText()));
+        Calc_text.setText(String.valueOf(calc.get_tan()));
+        point = true;
     }//GEN-LAST:event_btn_tanActionPerformed
 
     private void btn_piActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_piActionPerformed
@@ -355,103 +362,105 @@ public class Calcolatrice_GUI extends javax.swing.JFrame {
     }//GEN-LAST:event_btn_piActionPerformed
 
     private void btn_sqrtActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_sqrtActionPerformed
-        Calc_text.setText(String.valueOf(Math.sqrt(Double.parseDouble(Calc_text.getText()))));
+        calc.set_sqrt(Double.parseDouble(Calc_text.getText()));
+        Calc_text.setText(String.valueOf(calc.get_sqrt()));
+        point = true;
     }//GEN-LAST:event_btn_sqrtActionPerformed
 
-    private void Calc_textActionPerformed(java.awt.event.ActionEvent evt) {// GEN-FIRST:event_Calc_textActionPerformed
+    private void Calc_textActionPerformed(java.awt.event.ActionEvent evt) {
 
-    }// GEN-LAST:event_Calc_textActionPerformed
+    }
 
-    private void Btn_0ActionPerformed(java.awt.event.ActionEvent evt) {// GEN-FIRST:event_Btn_0ActionPerformed
+    private void Btn_0ActionPerformed(java.awt.event.ActionEvent evt) {
         set_Display("0");
-    }// GEN-LAST:event_Btn_0ActionPerformed
+    }
 
-    private void Btn_1ActionPerformed(java.awt.event.ActionEvent evt) {// GEN-FIRST:event_Btn_1ActionPerformed
+    private void Btn_1ActionPerformed(java.awt.event.ActionEvent evt) {
         set_Display("1");
-    }// GEN-LAST:event_Btn_1ActionPerformed
+    }
 
-    private void Btn_2ActionPerformed(java.awt.event.ActionEvent evt) {// GEN-FIRST:event_Btn_2ActionPerformed
+    private void Btn_2ActionPerformed(java.awt.event.ActionEvent evt) {
         set_Display("2");
-    }// GEN-LAST:event_Btn_2ActionPerformed
+    }
 
-    private void Btn_3ActionPerformed(java.awt.event.ActionEvent evt) {// GEN-FIRST:event_Btn_3ActionPerformed
+    private void Btn_3ActionPerformed(java.awt.event.ActionEvent evt) {
         set_Display("3");
-    }// GEN-LAST:event_Btn_3ActionPerformed
+    }
 
-    private void Btn_4ActionPerformed(java.awt.event.ActionEvent evt) {// GEN-FIRST:event_Btn_4ActionPerformed
+    private void Btn_4ActionPerformed(java.awt.event.ActionEvent evt) {
         set_Display("4");
-    }// GEN-LAST:event_Btn_4ActionPerformed
+    }
 
-    private void Btn_5ActionPerformed(java.awt.event.ActionEvent evt) {// GEN-FIRST:event_Btn_5ActionPerformed
+    private void Btn_5ActionPerformed(java.awt.event.ActionEvent evt) {
         set_Display("5");
-    }// GEN-LAST:event_Btn_5ActionPerformed
+    }
 
-    private void Btn_6ActionPerformed(java.awt.event.ActionEvent evt) {// GEN-FIRST:event_Btn_6ActionPerformed
+    private void Btn_6ActionPerformed(java.awt.event.ActionEvent evt) {
         set_Display("6");
-    }// GEN-LAST:event_Btn_6ActionPerformed
+    }
 
-    private void Btn_7ActionPerformed(java.awt.event.ActionEvent evt) {// GEN-FIRST:event_Btn_7ActionPerformed
+    private void Btn_7ActionPerformed(java.awt.event.ActionEvent evt) {
         set_Display("7");
-    }// GEN-LAST:event_Btn_7ActionPerformed
+    }
 
-    private void Btn_8ActionPerformed(java.awt.event.ActionEvent evt) {// GEN-FIRST:event_Btn_8ActionPerformed
+    private void Btn_8ActionPerformed(java.awt.event.ActionEvent evt) {
         set_Display("8");
-    }// GEN-LAST:event_Btn_8ActionPerformed
+    }
 
-    private void Btn_9ActionPerformed(java.awt.event.ActionEvent evt) {// GEN-FIRST:event_Btn_9ActionPerformed
+    private void Btn_9ActionPerformed(java.awt.event.ActionEvent evt) {
         set_Display("9");
-    }// GEN-LAST:event_Btn_9ActionPerformed
+    }
 
-    private void CancActionPerformed(java.awt.event.ActionEvent evt) {// GEN-FIRST:event_CancActionPerformed
+    private void CancActionPerformed(java.awt.event.ActionEvent evt) {
         Calc_text.setText("0");
         calc.set_reset(true);
         point = true;
 
-    }// GEN-LAST:event_CancActionPerformed
+    }
 
-    private void AddizioneActionPerformed(java.awt.event.ActionEvent evt) {// GEN-FIRST:event_AddizioneActionPerformed
+    private void AddizioneActionPerformed(java.awt.event.ActionEvent evt) {
         calc.set_n1(Double.parseDouble(Calc_text.getText()));
         calc.set_operando("+");
         Calc_text.setText("0");
         point = true;
 
-    }// GEN-LAST:event_AddizioneActionPerformed
+    }
 
-    private void SottrazioneActionPerformed(java.awt.event.ActionEvent evt) {// GEN-FIRST:event_SottrazioneActionPerformed
+    private void SottrazioneActionPerformed(java.awt.event.ActionEvent evt) {
         calc.set_n1(Double.parseDouble(Calc_text.getText()));
         calc.set_operando("-");
         Calc_text.setText("0");
         point = true;
 
-    }// GEN-LAST:event_SottrazioneActionPerformed
+    }
 
-    private void DivisioneActionPerformed(java.awt.event.ActionEvent evt) {// GEN-FIRST:event_DivisioneActionPerformed
+    private void DivisioneActionPerformed(java.awt.event.ActionEvent evt) {
         calc.set_n1(Double.parseDouble(Calc_text.getText()));
         calc.set_operando(":");
         Calc_text.setText("0");
-    }// GEN-LAST:event_DivisioneActionPerformed
+    }
 
-    private void MoltiplicazioneActionPerformed(java.awt.event.ActionEvent evt) {// GEN-FIRST:event_MoltiplicazioneActionPerformed
+    private void MoltiplicazioneActionPerformed(java.awt.event.ActionEvent evt) {
         calc.set_n1(Double.parseDouble(Calc_text.getText()));
         calc.set_operando("*");
         Calc_text.setText("0");
         point = true;
 
-    }// GEN-LAST:event_MoltiplicazioneActionPerformed
+    }
 
-    private void TotaleActionPerformed(java.awt.event.ActionEvent evt) {// GEN-FIRST:event_TotaleActionPerformed
+    private void TotaleActionPerformed(java.awt.event.ActionEvent evt) {
         calc.set_n2(Double.parseDouble(Calc_text.getText()));
         Calc_text.setText(Double.toString(calc.get_tot()));
         point = true;
 
-    }// GEN-LAST:event_TotaleActionPerformed
+    }
 
-    private void PuntoActionPerformed(java.awt.event.ActionEvent evt) {// GEN-FIRST:event_PuntoActionPerformed
+    private void PuntoActionPerformed(java.awt.event.ActionEvent evt) {
         if (point == true) {
             set_Display(".");
             point = false;
         }
-    }// GEN-LAST:event_PuntoActionPerformed
+    }
 
     /**
      * @param args the command line arguments

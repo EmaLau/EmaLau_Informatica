@@ -13,6 +13,9 @@ public class Calcoli_base {
     private double n2;
     private String operando;
     private double tot;
+    //Costruttore
+    
+    
     //Metodi
     public void set_n1(String n1){
         this.n1_string = n1;

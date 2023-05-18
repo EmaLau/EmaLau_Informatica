@@ -17,8 +17,66 @@ public class Calcolatrice_Class {
     private double n2;
     private String operando;
     private double tot;
-
+    private double sin;
+    private double cos;
+    private double tan;
+    private double sqrt;
+    //Constructor
+    
+    public Calcolatrice_Class(){
+        
+    }
+    
+    public Calcolatrice_Class(double n1, double n2, String operando){
+        this.n1 = n1;
+        this.n2 = n2;
+        this.operando = operando;
+    }
+    
+    
     //Metods
+ 
+    public void set_sqrt(double sqrt){
+        this.sqrt = sqrt;
+    }
+    
+    public double get_sqrt(){
+        tot = Math.sqrt(sqrt);
+        return tot;
+    }
+    
+    
+    public void set_tan(double tan){
+        this.tan = tan;
+    }
+    
+    
+    public double get_tan(){
+        tot = Math.tan(tan);
+        return tot;
+    }
+    
+    
+    public void set_sin(double sin){
+        this.sin = sin;
+    }
+    
+    public double get_sin(){
+        tot = Math.sin(sin);
+        return tot;
+    }
+    
+    public void set_cos(double cos){
+        this.cos = cos;
+    }
+    
+    public double get_cos(){
+        tot = Math.cos(cos);
+        return tot;
+    }
+    
+    
+    
     public void set_n1(double n1) {
         this.n1 = n1;
     }
