@@ -21,6 +21,7 @@ public class Calcolatrice_Class {
     private double cos;
     private double tan;
     private double sqrt;
+    private boolean rad_deg = false;
     //Constructor
     
     public Calcolatrice_Class(){
@@ -35,13 +36,25 @@ public class Calcolatrice_Class {
     
     
     //Metods
- 
+    public void set_rad_deg(int rad_deg){
+        if(rad_deg == 0){
+            this.rad_deg = false;
+        }else{
+            this.rad_deg = true;
+        }
+    }
+    
+    
     public void set_sqrt(double sqrt){
         this.sqrt = sqrt;
     }
     
     public double get_sqrt(){
-        tot = Math.sqrt(sqrt);
+        if(this.rad_deg == false){
+         tot = Math.sqrt(sqrt);
+         }else{
+            tot = Math.toDegrees(Math.sqrt(sqrt));
+        }
         return tot;
     }
     
@@ -62,7 +75,11 @@ public class Calcolatrice_Class {
     }
     
     public double get_sin(){
-        tot = Math.sin(sin);
+        if(this.rad_deg == false){
+         tot = Math.sin(sin);
+         }else{
+            tot = Math.toDegrees(Math.sin(sin));
+        }
         return tot;
     }
     
@@ -72,6 +89,7 @@ public class Calcolatrice_Class {
     
     public double get_cos(){
         tot = Math.cos(cos);
+        tot = Math.toDegrees(tot);
         return tot;
     }
     

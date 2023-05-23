@@ -8,6 +8,7 @@ public class Calcolatrice_GUI extends javax.swing.JFrame {
 
     public Calcolatrice_GUI() {
         initComponents();
+        calc.set_rad_deg(0);
     }
 
     private void set_Display(String num) {
@@ -46,6 +47,7 @@ public class Calcolatrice_GUI extends javax.swing.JFrame {
         btn_tan = new javax.swing.JButton();
         btn_pi = new javax.swing.JButton();
         btn_sqrt = new javax.swing.JButton();
+        cb_rad_deg = new javax.swing.JComboBox<>();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -233,6 +235,13 @@ public class Calcolatrice_GUI extends javax.swing.JFrame {
             }
         });
 
+        cb_rad_deg.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "rad", "deg" }));
+        cb_rad_deg.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cb_rad_degActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -289,8 +298,10 @@ public class Calcolatrice_GUI extends javax.swing.JFrame {
                                             .addComponent(btn_pi, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                                             .addComponent(btn_tan, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))))))
                         .addGap(18, 18, 18)
-                        .addComponent(btn_sqrt, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 102, Short.MAX_VALUE)))
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(btn_sqrt, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(cb_rad_deg, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(0, 70, Short.MAX_VALUE)))
                 .addContainerGap())
         );
         layout.setVerticalGroup(
@@ -298,7 +309,6 @@ public class Calcolatrice_GUI extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(Calc_text, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -310,11 +320,13 @@ public class Calcolatrice_GUI extends javax.swing.JFrame {
                             .addComponent(btn_tan, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(btn_sqrt, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(18, 18, 18)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(Btn_4, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(Btn_6, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(Btn_5, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(Sottrazione, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                .addComponent(Btn_4, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(Btn_6, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(Btn_5, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(Sottrazione, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(cb_rad_deg, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(58, 58, 58)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -366,6 +378,10 @@ public class Calcolatrice_GUI extends javax.swing.JFrame {
         Calc_text.setText(String.valueOf(calc.get_sqrt()));
         point = true;
     }//GEN-LAST:event_btn_sqrtActionPerformed
+
+    private void cb_rad_degActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cb_rad_degActionPerformed
+        calc.set_rad_deg(cb_rad_deg.getSelectedIndex());
+    }//GEN-LAST:event_cb_rad_degActionPerformed
 
     private void Calc_textActionPerformed(java.awt.event.ActionEvent evt) {
 
@@ -529,5 +545,6 @@ public class Calcolatrice_GUI extends javax.swing.JFrame {
     private javax.swing.JButton btn_sin;
     private javax.swing.JButton btn_sqrt;
     private javax.swing.JButton btn_tan;
+    private javax.swing.JComboBox<String> cb_rad_deg;
     // End of variables declaration//GEN-END:variables
 }
