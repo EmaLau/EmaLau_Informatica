@@ -29,7 +29,7 @@ def cifratore(m):
     return int((pow(m, n_pub))%n)
 
 def decifratore(m):
-
+    return None
 
 
 generatore_chiavi()
