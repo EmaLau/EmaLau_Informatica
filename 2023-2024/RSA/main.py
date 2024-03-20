@@ -1,4 +1,7 @@
 import math
+import random
+
+
 def coppia(a, b):
     return float(str(a) + "." + str(b))
 
@@ -16,13 +19,17 @@ def generatore_chiavi():
             break
         else:
             print("hanno fattori in comune")
-    n_pub = int(input("Inserisci numero chiave pubblica "))
-    if (n_priv * n_pub)%v == 1:
-        print("ecco le tue chiavi")
-        key_priv = coppia(n, n_priv)
-        key_pub = coppia(n, n_pub)
-        print("chiave privata " f'{key_priv} ')
-        print("chiave pubblica " f'{key_pub}')
+
+    while True:
+        n_pub = random.randint(1,1000000)
+        if(n_priv * n_pub)%v == 1:
+            print("ecco le tue chiavi")
+            key_priv = coppia(n, n_priv)
+            key_pub = coppia(n, n_pub)
+            print("chiave privata " f'{key_priv} ')
+            print("chiave pubblica " f'{key_pub}')
+            break
+
     return None
 
 def cifratore(m):
