@@ -21,7 +21,7 @@ def generatore_chiavi():
             print("hanno fattori in comune")
 
     while True:
-        n_pub = random.randint(1,1000000)
+        n_pub = random.randint(100,5000000)
         if(n_priv * n_pub)%v == 1:
             print("ecco le tue chiavi")
             key_priv = coppia(n, n_priv)
@@ -29,6 +29,8 @@ def generatore_chiavi():
             print("chiave privata " f'{key_priv} ')
             print("chiave pubblica " f'{key_pub}')
             break
+        else:
+            print(n_pub)
 
     return None
 
