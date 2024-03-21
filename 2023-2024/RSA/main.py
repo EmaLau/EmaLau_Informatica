@@ -30,7 +30,7 @@ def generatore_chiavi():
             print("chiave pubblica " f'{key_pub}')
             break
         else:
-            print(n_pub)
+            print(n_pub) #TODO: Eliminare quasta parte a fine lavoro
 
     return None
 
